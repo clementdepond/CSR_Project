@@ -13,6 +13,8 @@ public class Requin extends Thread{
     public static final int P = 5;
 
     int nb_pilotes_attaches = 0;
+    boolean dispo = false;
+    boolean mouvement = false;
 
     public Requin(Zone zone) {
         this.NB_PILOTES = 5;
@@ -44,9 +46,7 @@ public class Requin extends Thread{
         int choix = new Random().nextInt(4);
 
         this.zoneDestination = listeDestionations.get(choix);
-
-
-
+        this.mouvement = true;
     }
 
     public void entrer(){
@@ -54,13 +54,16 @@ public class Requin extends Thread{
         this.zoneActuelle = zoneDestination;
         this.zoneDestination = null;
         notify();
+        this.mouvement = false;
     }
 
     public void manger() {
+        this.dispo = true;
         this.zoneActuelle.mangerPoisson();
         try {
             Thread.sleep(100);
         }catch (InterruptedException e){e.printStackTrace();}
+        this.dispo = false;
     }
 
     public synchronized void attacher() {

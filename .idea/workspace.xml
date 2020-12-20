@@ -10,8 +10,8 @@
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
 =======
     <list default="true" id="07969ef9-570c-419d-8d05-48934e733816" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MultiThreading/Pilote.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MultiThreading/Pilote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThreading/Pilote.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MultiThreading/Requin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThreading/Requin.java" afterDir="false" />
     </list>
 >>>>>>> 35ab26b4674395763dc908bccf0e1540b92a9c21
@@ -181,6 +181,14 @@
     <option name="showLibraryContents" value="true" />
 >>>>>>> 35ab26b4674395763dc908bccf0e1540b92a9c21
   </component>
+  <component name="PropertiesComponent">
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -236,7 +244,7 @@
   </component>
 =======
       <updated>1608393205216</updated>
-      <workItem from="1608393206911" duration="1332000" />
+      <workItem from="1608393206911" duration="4869000" />
     </task>
     <servers />
   </component>
@@ -309,10 +317,14 @@
     </entry>
 =======
   <component name="WindowStateProjectService">
-    <state x="348" y="73" width="585" height="534" key="find.popup" timestamp="1608393895399">
+    <state x="348" y="73" width="585" height="534" key="find.popup" timestamp="1608475170318">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
+<<<<<<< HEAD
     <state x="348" y="73" width="585" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1608393895399" />
 >>>>>>> 35ab26b4674395763dc908bccf0e1540b92a9c21
+=======
+    <state x="348" y="73" width="585" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1608475170318" />
+>>>>>>> 206b16605d93b635ade777224343c4ec7a060700
   </component>
 </project>
