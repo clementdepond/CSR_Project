@@ -23,7 +23,7 @@ public class Requin extends Thread{
 
     public void sortir() {
         this.zoneActuelle.sortir();
-        this.zoneActuelle = null;
+
     }
 
     public void choisirDestination(){
@@ -47,15 +47,18 @@ public class Requin extends Thread{
 
         this.zoneDestination = listeDestionations.get(choix);
         this.mouvement = true;
+        this.zoneActuelle = null;
     }
 
-    public void entrer(){
+    public synchronized void entrer(){
         this.zoneDestination.entrer(this);
         this.zoneActuelle = zoneDestination;
         this.zoneDestination = null;
-        notify();
         this.mouvement = false;
+
+        notifyAll();
     }
+
 
     public void manger() {
         this.dispo = true;
@@ -67,7 +70,7 @@ public class Requin extends Thread{
     }
 
     public synchronized void attacher() {
-        while (nb_pilotes_attaches > P) {
+        while (nb_pilotes_attaches > P || !dispo) {
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -76,6 +79,7 @@ public class Requin extends Thread{
         }
         nb_pilotes_attaches++;
     }
+
 
     public synchronized void detacher() {
         nb_pilotes_attaches--;

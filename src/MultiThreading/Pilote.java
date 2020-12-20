@@ -6,8 +6,15 @@ public class Pilote extends Thread {
     private Zone zoneDestination;
     private Requin requin;
 
+
+    public Pilote(Zone zone){
+
+        zoneCourante = zone;
+    }
+
     public void attacherRequin() {
-        while (requin.dispo = false) {
+
+        while (zoneCourante.occuper() == null) { // tant que y'a pas de Requin
             try {
                 wait();
             } catch (InterruptedException e) {

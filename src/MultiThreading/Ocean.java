@@ -6,12 +6,30 @@ public class Ocean {
 
     public static Zone zone[][] = new Zone[N][N];
 
-    public Ocean(int NB_ZONE) {
-        for (int i=0; i < 4; i++) {
-            for (int j=0; j < 4; j++) {
+    private static Requin[] requins = new Requin[2];
+   // private static Pilote[] requins = new Requin[2];
+
+
+    public Ocean() {
+        for (int i=0; i < N; i++) {
+            for (int j=0; j < N; j++) {
                 zone[i][j] = new Zone(i,j);
             }
         }
+    }
+
+    public void creerRequin(){
+
+        requins[0] = new Requin(zone[3][3]);
+        requins[0].start();
+
+        requins[1] = new Requin(zone[1][2]);
+        requins[1].start();
+    }
+
+    public void creerPilote(){
+
+
     }
 
     /**
@@ -68,5 +86,11 @@ public class Ocean {
         }
 
         return zone[posX][y];
+    }
+
+    public static void main(String[] args) {
+
+        Ocean ocean = new Ocean();
+        ocean.creerRequin();
     }
 }

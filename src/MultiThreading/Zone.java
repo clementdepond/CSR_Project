@@ -24,11 +24,13 @@ public class Zone {
 
     public synchronized void mangerPoisson() {
 
-        if (this.nb_sardines <= 2){
+        if (this.nb_sardines <= 10){
             this.nb_sardines = 0;
         }else {
-            this.nb_sardines -=2;
+            this.nb_sardines -=10;
         }
+
+        System.out.println("Le nombre de sardine dans la zone ("+x+","+y+") est = " +nb_sardines);
     }
 
 
@@ -43,12 +45,15 @@ public class Zone {
         }
 
         this.requinPresent = requin;
+        System.out.println("Le requin "+ Thread.currentThread().getName() + " entre en zone ("+x+","+y+")");
     }
 
     public synchronized void sortir(){
 
         this.requinPresent = null;
         notifyAll();
+
+        System.out.println("Le requin sort"+ Thread.currentThread().getName() + " sort en zone ("+x+","+y+")");
     }
 
     public Requin occuper(){
