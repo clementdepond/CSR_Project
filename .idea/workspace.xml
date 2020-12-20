@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="40ac62d6-e770-4cc2-86bc-440e7f38fda2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+=======
+    <list default="true" id="07969ef9-570c-419d-8d05-48934e733816" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MultiThreading/Pilote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MultiThreading/Requin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiThreading/Requin.java" afterDir="false" />
+    </list>
+>>>>>>> 35ab26b4674395763dc908bccf0e1540b92a9c21
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
@@ -67,15 +76,17 @@
       </file>
     </leaf>
   </component>
+=======
+>>>>>>> 35ab26b4674395763dc908bccf0e1540b92a9c21
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -87,8 +98,16 @@
         <option value="$PROJECT_DIR$/src/MultiThreading/Ocean.java" />
         <option value="$PROJECT_DIR$/src/MultiThreading/Requin.java" />
       </list>
+=======
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+>>>>>>> 35ab26b4674395763dc908bccf0e1540b92a9c21
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="291" />
     <option name="y" value="25" />
@@ -155,16 +174,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="ProjectId" id="1lskUve5AQnQz9VL8P56ouUGSvq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+>>>>>>> 35ab26b4674395763dc908bccf0e1540b92a9c21
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="40ac62d6-e770-4cc2-86bc-440e7f38fda2" name="Default Changelist" comment="" />
-      <created>1607368027398</created>
+      <changelist id="07969ef9-570c-419d-8d05-48934e733816" name="Default Changelist" comment="" />
+      <created>1608393205216</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1607368027398</updated>
       <workItem from="1607368029091" duration="2515000" />
       <workItem from="1607519898875" duration="1315000" />
@@ -208,9 +234,17 @@
       <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+=======
+      <updated>1608393205216</updated>
+      <workItem from="1608393206911" duration="1332000" />
+    </task>
+    <servers />
   </component>
+>>>>>>> 35ab26b4674395763dc908bccf0e1540b92a9c21
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+<<<<<<< HEAD
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MultiThreading/IZone.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -273,5 +307,12 @@
         </state>
       </provider>
     </entry>
+=======
+  <component name="WindowStateProjectService">
+    <state x="348" y="73" width="585" height="534" key="find.popup" timestamp="1608393895399">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="348" y="73" width="585" height="534" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1608393895399" />
+>>>>>>> 35ab26b4674395763dc908bccf0e1540b92a9c21
   </component>
 </project>

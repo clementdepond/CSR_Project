@@ -9,7 +9,10 @@ public class Requin extends Thread{
     private int NB_CYCLE = 10;
     private int NB_PILOTES;
     private Zone zoneActuelle;
-    private Zone zoneDestination;
+    public Zone zoneDestination;
+    public static final int P = 5;
+
+    int nb_pilotes_attaches = 0;
 
     public Requin(Zone zone) {
         this.NB_PILOTES = 5;
@@ -50,6 +53,7 @@ public class Requin extends Thread{
         this.zoneDestination.entrer(this);
         this.zoneActuelle = zoneDestination;
         this.zoneDestination = null;
+        notify();
     }
 
     public void manger() {
@@ -57,6 +61,21 @@ public class Requin extends Thread{
         try {
             Thread.sleep(100);
         }catch (InterruptedException e){e.printStackTrace();}
+    }
+
+    public synchronized void attacher() {
+        while (nb_pilotes_attaches > P) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        nb_pilotes_attaches++;
+    }
+
+    public synchronized void detacher() {
+        nb_pilotes_attaches--;
     }
 
     public void run() {
