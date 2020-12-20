@@ -7,6 +7,13 @@ public class Pilote extends Thread {
     private Requin requin;
 
     public void attacherRequin() {
+        while (requin.dispo = false) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
         this.requin.attacher();
     }
 
@@ -17,6 +24,13 @@ public class Pilote extends Thread {
     }
 
     public void detacherRequin() {
+        while (requin.mouvement = true) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
         this.requin.detacher();
     }
 
