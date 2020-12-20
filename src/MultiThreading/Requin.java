@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class Requin extends Thread{
 
-    private int NB_CYCLE = 10;
+    private int NB_CYCLE = 3;
     private int NB_PILOTES;
     private Zone zoneActuelle;
     public Zone zoneDestination;
@@ -56,6 +56,10 @@ public class Requin extends Thread{
         this.zoneDestination = null;
         this.mouvement = false;
 
+    }
+
+    public synchronized void avertirPilote(){
+
         notifyAll();
     }
 
@@ -70,7 +74,7 @@ public class Requin extends Thread{
     }
 
     public synchronized void attacher() {
-        while (nb_pilotes_attaches > P || !dispo) {
+        while (nb_pilotes_attaches > P) {
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -82,15 +86,26 @@ public class Requin extends Thread{
 
 
     public synchronized void detacher() {
+
+        while (zoneActuelle == null){
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
         nb_pilotes_attaches--;
+        notifyAll();
+        System.out.println("Le poisson pilote "+Thread.currentThread().getName()+" est arrive dans la zone "+"("+zoneActuelle.x+","+zoneActuelle.y+")");
     }
 
     public void run() {
-
+        System.out.println("Le requin  "+Thread.currentThread().getName()+" est dans la zone "+"("+zoneActuelle.x+","+zoneActuelle.y+")");
         for (int i=0; i< NB_CYCLE; i++) {
             sortir();
             choisirDestination();
             entrer();
+            avertirPilote();
             manger();
         }
     }

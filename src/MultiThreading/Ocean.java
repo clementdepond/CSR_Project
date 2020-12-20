@@ -20,8 +20,8 @@ public class Ocean {
 
     public void creerRequin(){
 
-        requins[0] = new Requin(zone[3][3]);
-        requins[0].start();
+        /*requins[0] = new Requin(zone[3][3]);
+        requins[0].start();*/
 
         requins[1] = new Requin(zone[1][2]);
         requins[1].start();
@@ -29,6 +29,10 @@ public class Ocean {
 
     public void creerPilote(){
 
+        Pilote pilote1 = new Pilote(zone[1][2]);
+        pilote1.start();
+       /* Pilote pilote2 = new Pilote(zone[2][2]);
+        pilote2.start();*/
 
     }
 
@@ -91,6 +95,9 @@ public class Ocean {
     public static void main(String[] args) {
 
         Ocean ocean = new Ocean();
+        ocean.creerPilote();
         ocean.creerRequin();
+
+
     }
 }

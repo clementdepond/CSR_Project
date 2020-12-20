@@ -12,8 +12,8 @@ public class Zone {
     private int nb_poi_pil;
     private int nb_sardines;
     private Requin requinPresent;
-    private int x;
-    private int y;
+    public int x;
+    public int y;
 
     public Zone(int x, int y) {
         this.x = x;
@@ -53,7 +53,7 @@ public class Zone {
         this.requinPresent = null;
         notifyAll();
 
-        System.out.println("Le requin sort"+ Thread.currentThread().getName() + " sort en zone ("+x+","+y+")");
+        System.out.println("Le requin sort "+ Thread.currentThread().getName() + " sort en zone ("+x+","+y+")");
     }
 
     public Requin occuper(){
